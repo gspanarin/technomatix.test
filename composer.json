@@ -1,0 +1,19 @@
+{
+    "name": "gspanarin/test_task",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Hennadii Panarin",
+            "email": "gspanarin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\" : "app",
+            "trunsport\\" : "transport"
+        }
+      },
+    "require": {
+        "nette/robot-loader": "^3.4"
+    }
+}
