@@ -11,6 +11,7 @@ abstract class transport {
     private $id;
     private $max_passengers;
     private $max_baggage;
+    private $fuel;
     private $fuel_consumption;
     private $max_distance;
     private $amortization;
@@ -36,13 +37,16 @@ abstract class transport {
     }
 
     public function price( $passengers, $baggage, $distance){
+        $config = dispetcher::$config;
+        
         if ($this->max_passengers >= $passengers &&
             $this->max_baggage >= $baggage &&
             $this->max_distance >= $distance){
             
             $driver_price = $distance * $this->km_price * $this->driver_category;
-            $fuel_price = ($this->fuel_consumption * $distance / 100) * 56;
+            $fuel_price = ($this->fuel_consumption * $distance / 100) * $config['fuel'][$this->fuel];
             $price = $driver_price +  ($fuel_price * $this->amortization);
+            
             return $price;
         }
         

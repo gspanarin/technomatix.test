@@ -9,10 +9,10 @@ return [
         'max_baggage' => 1150,
         'fuel_consumption' => 26.5,
         'max_distance' => 670,
-        'amortization' => 2,
+        'amortization' => 1.02,
         'fuel' => 'd',
-        'km_price' => 22,
-        'driver_category' => 5
+        'km_price' => 10,
+        'driver_category' => 2
     ],
     
     [
@@ -23,10 +23,10 @@ return [
         'max_baggage' => 26000,
         'fuel_consumption' => 24.5,
         'max_distance' => 1400,
-        'amortization' => 2,
-        'km_price' => 20,
+        'amortization' => 1.05,
+        'km_price' => 9,
         'fuel' => 'd',
-        'driver_category' => 4
+        'driver_category' => 1.8
     ],
     
     [
@@ -37,10 +37,10 @@ return [
         'max_baggage' => 2500,
         'fuel_consumption' => 13.7,
         'max_distance' => 780,
-        'amortization' => 2,
-        'km_price' => 15,
+        'amortization' => 1.07,
+        'km_price' => 7,
         'fuel' => '95',
-        'driver_category' => 3
+        'driver_category' => 1.3
     ],
     
     [
@@ -51,10 +51,10 @@ return [
         'max_baggage' => 50,
         'fuel_consumption' => 0,
         'max_distance' => 10,
-        'amortization' => 2,
-        'km_price' => 5,
-        'fuel' => null,
-        'driver_category' => 2
+        'amortization' => 1.02,
+        'km_price' => 2,
+        'fuel' => 'n',
+        'driver_category' => 1
     ],
     
     [
@@ -65,10 +65,10 @@ return [
         'max_baggage' => 300,
         'fuel_consumption' => 18,
         'max_distance' => 600,
-        'amortization' => 2,
-        'km_price' => 16,
+        'amortization' => 1.05,
+        'km_price' => 8,
         'fuel' => '98',
-        'driver_category' => 5
+        'driver_category' => 1.9
     ],
     
 ];

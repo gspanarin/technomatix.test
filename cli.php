@@ -13,4 +13,7 @@ foreach ($argv as $argument) {
 print("\033[2J\033[;H");
 
 $app = new dispetcher($argv);
-$app->calculate(intval($params['p']), floatval($params['b']), floatval($params['d']));
+$app->calculate(
+        (isset($params['p']) ? intval($params['p']) : 0), 
+        (isset($params['b']) ? floatval($params['b']) : 0), 
+        (isset($params['d']) ? floatval($params['d']) : 0), );
