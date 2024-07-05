@@ -10,10 +10,10 @@
     "autoload": {
         "psr-4": {
             "app\\" : "app",
-            "trunsport\\" : "transport"
+            "transport\\" : "transport"
         }
       },
     "require": {
-        "nette/robot-loader": "^3.4"
+       
     }
 }

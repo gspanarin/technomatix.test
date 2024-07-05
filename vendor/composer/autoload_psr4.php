@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'trunsport\\' => array($baseDir . '/transport'),
+    'transport\\' => array($baseDir . '/transport'),
     'app\\' => array($baseDir . '/app'),
 );

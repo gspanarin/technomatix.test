@@ -1,6 +1,8 @@
 <?php
 namespace app;
-include_once('loader.php');
+
+include_once('vendor/autoload.php');
+
 unset($argv[0]);
 foreach ($argv as $argument) {
     preg_match('/^-(.+)=(.+)$/', $argument, $matches);
@@ -10,7 +12,6 @@ foreach ($argv as $argument) {
         $params[$paramName] = $paramValue;
     }            
 }
-print("\033[2J\033[;H");
 
 $app = new dispetcher($argv);
 $app->calculate(
